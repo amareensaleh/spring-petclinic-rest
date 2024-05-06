@@ -34,6 +34,7 @@
         <docker.jib-maven-plugin.version>3.4.0</docker.jib-maven-plugin.version>
         <docker.image.prefix>springcommunity</docker.image.prefix>
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
+        <graphqlify.version>1.0.0-SNAPSHOT</graphqlify.version>
     </properties>
 
     <dependencies>
@@ -318,11 +319,32 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>${maven-compiler-plugin.version}</version>
                 <configuration>
+                    <showWarnings>true</showWarnings>
                     <annotationProcessorPaths>
                         <path>
                             <groupId>org.mapstruct</groupId>
                             <artifactId>mapstruct-processor</artifactId>
                             <version>${mapstruct.version}</version>
+                        </path>
+                        <path>
+                            <groupId>com.petra.graphqlify</groupId>
+                            <artifactId>graphqlify-java-processor-engine</artifactId>
+                            <version>${graphqlify.version}</version>
+                        </path>
+                        <path>
+                            <groupId>com.petra.graphqlify</groupId>
+                            <artifactId>graphqlify-java-springweb-plugin</artifactId>
+                            <version>${graphqlify.version}</version>
+                        </path>
+                        <path>
+                            <groupId>org.springframework</groupId>
+                            <artifactId>spring-web</artifactId>
+                            <version>6.1.2</version>
+                        </path>
+                        <path>
+                            <groupId>org.springframework</groupId>
+                            <artifactId>spring-context</artifactId>
+                            <version>6.1.2</version>
                         </path>
                     </annotationProcessorPaths>
                     <compilerArgs>
