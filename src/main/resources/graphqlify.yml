@@ -4,4 +4,4 @@ input:
       - jakarta.servlet.http.HttpServletResponse
 
 failure:
-  mode: "auto_correct"
+  mode: "fail_safe"
