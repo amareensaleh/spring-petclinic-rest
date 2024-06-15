@@ -1,7 +1,0 @@
-input:
-  ignore:
-    types:
-      - jakarta.servlet.http.HttpServletResponse
-
-failure:
-  mode: "fail_safe"
