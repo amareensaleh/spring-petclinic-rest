@@ -1,0 +1,232 @@
+scalar LocalDate
+
+type Mutation {
+  "[/Users/amarees/IdeaProjects/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/rest/api/OwnersApi.java:59:5]"
+  addOwner(ownerFieldsDto: OwnerFieldsDtoInput @payload): OwnerDto
+  "[/Users/amarees/IdeaProjects/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/rest/api/PetsApi.java:56:5]"
+  addPet(petDto: PetDtoInput @payload): PetDto
+  "[/Users/amarees/IdeaProjects/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/rest/api/OwnersApi.java:110:5]"
+  addPetToOwner(ownerId: Int, petFieldsDto: PetFieldsDtoInput @payload): PetDto
+  "[/Users/amarees/IdeaProjects/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/rest/api/PettypesApi.java:56:5]"
+  addPetType(petTypeDto: PetTypeDtoInput @payload): PetTypeDto
+  "[/Users/amarees/IdeaProjects/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/rest/api/SpecialtiesApi.java:56:5]"
+  addSpecialty(specialtyDto: SpecialtyDtoInput @payload): SpecialtyDto
+  "[/Users/amarees/IdeaProjects/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/rest/api/UsersApi.java:56:5]"
+  addUser(userDto: UserDtoInput @payload): UserDto
+  "[/Users/amarees/IdeaProjects/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/rest/api/VetsApi.java:56:5]"
+  addVet(vetDto: VetDtoInput @payload): VetDto
+  "[/Users/amarees/IdeaProjects/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/rest/api/VisitsApi.java:56:5]"
+  addVisit(visitDto: VisitDtoInput @payload): VisitDto
+  "[/Users/amarees/IdeaProjects/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/rest/api/OwnersApi.java:166:5]"
+  addVisitToOwner(ownerId: Int, petId: Int, visitFieldsDto: VisitFieldsDtoInput @payload): VisitDto
+  "[/Users/amarees/IdeaProjects/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/rest/api/OwnersApi.java:222:5]"
+  deleteOwner(ownerId: Int): OwnerDto
+  "[/Users/amarees/IdeaProjects/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/rest/api/PetsApi.java:111:5]"
+  deletePet(petId: Int): PetDto
+  "[/Users/amarees/IdeaProjects/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/rest/api/PettypesApi.java:111:5]"
+  deletePetType(petTypeId: Int): PetTypeDto
+  "[/Users/amarees/IdeaProjects/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/rest/api/SpecialtiesApi.java:111:5]"
+  deleteSpecialty(specialtyId: Int): SpecialtyDto
+  "[/Users/amarees/IdeaProjects/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/rest/api/VetsApi.java:111:5]"
+  deleteVet(vetId: Int): VetDto
+  "[/Users/amarees/IdeaProjects/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/rest/api/VisitsApi.java:111:5]"
+  deleteVisit(visitId: Int): VisitDto
+  "[/Users/amarees/IdeaProjects/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/rest/api/OwnersApi.java:432:5]"
+  updateOwner(ownerId: Int, ownerFieldsDto: OwnerFieldsDtoInput @payload): OwnerDto
+  "[/Users/amarees/IdeaProjects/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/rest/api/OwnersApi.java:488:5]"
+  updateOwnersPet(ownerId: Int, petId: Int, petFieldsDto: PetFieldsDtoInput @payload): Void
+  "[/Users/amarees/IdeaProjects/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/rest/api/PetsApi.java:265:5]"
+  updatePet(petId: Int, petDto: PetDtoInput @payload): PetDto
+  "[/Users/amarees/IdeaProjects/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/rest/api/PettypesApi.java:265:5]"
+  updatePetType(petTypeId: Int, petTypeDto: PetTypeDtoInput @payload): PetTypeDto
+  "[/Users/amarees/IdeaProjects/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/rest/api/SpecialtiesApi.java:265:5]"
+  updateSpecialty(specialtyId: Int, specialtyDto: SpecialtyDtoInput @payload): SpecialtyDto
+  "[/Users/amarees/IdeaProjects/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/rest/api/VetsApi.java:265:5]"
+  updateVet(vetId: Int, vetDto: VetDtoInput @payload): VetDto
+  "[/Users/amarees/IdeaProjects/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/rest/api/VisitsApi.java:265:5]"
+  updateVisit(visitId: Int, visitDto: VisitDtoInput @payload): VisitDto
+}
+
+type OwnerDto {
+  firstName: String
+  lastName: String
+  address: String
+  city: String
+  telephone: String
+  id: Int
+  pets: [PetDto]
+}
+
+input OwnerFieldsDtoInput {
+  firstName: String
+  lastName: String
+  address: String
+  city: String
+  telephone: String
+}
+
+type PetDto {
+  name: String
+  birthDate: LocalDate
+  type: PetTypeDto
+  id: Int
+  ownerId: Int
+  visits: [VisitDto]
+}
+
+input PetDtoInput {
+  name: String
+  birthDate: LocalDate
+  type: PetTypeDtoInput
+  id: Int
+  ownerId: Int
+  visits: [VisitDtoInput]
+}
+
+input PetFieldsDtoInput {
+  name: String
+  birthDate: LocalDate
+  type: PetTypeDtoInput
+}
+
+type PetTypeDto {
+  name: String
+  id: Int
+}
+
+input PetTypeDtoInput {
+  name: String
+  id: Int
+}
+
+type Query {
+  "[/Users/amarees/IdeaProjects/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/rest/api/OopsApi.java:52:5]"
+  failingRequest: String
+  "[/Users/amarees/IdeaProjects/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/rest/api/OwnersApi.java:276:5]"
+  getOwner(ownerId: Int): OwnerDto
+  "[/Users/amarees/IdeaProjects/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/rest/api/OwnersApi.java:331:5]"
+  getOwnersPet(ownerId: Int, petId: Int): PetDto
+  "[/Users/amarees/IdeaProjects/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/rest/api/PetsApi.java:165:5]"
+  getPet(petId: Int): PetDto
+  "[/Users/amarees/IdeaProjects/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/rest/api/PettypesApi.java:165:5]"
+  getPetType(petTypeId: Int): PetTypeDto
+  "[/Users/amarees/IdeaProjects/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/rest/api/SpecialtiesApi.java:165:5]"
+  getSpecialty(specialtyId: Int): SpecialtyDto
+  "[/Users/amarees/IdeaProjects/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/rest/api/VetsApi.java:165:5]"
+  getVet(vetId: Int): VetDto
+  "[/Users/amarees/IdeaProjects/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/rest/api/VisitsApi.java:165:5]"
+  getVisit(visitId: Int): VisitDto
+  "[/Users/amarees/IdeaProjects/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/rest/api/OwnersApi.java:384:5]"
+  listOwners(lastName: String): [OwnerDto]
+  "[/Users/amarees/IdeaProjects/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/rest/api/PettypesApi.java:216:5]"
+  listPetTypes: [PetTypeDto]
+  "[/Users/amarees/IdeaProjects/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/rest/api/PetsApi.java:216:5]"
+  listPets: [PetDto]
+  "[/Users/amarees/IdeaProjects/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/rest/api/SpecialtiesApi.java:216:5]"
+  listSpecialties: [SpecialtyDto]
+  "[/Users/amarees/IdeaProjects/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/rest/api/VetsApi.java:216:5]"
+  listVets: [VetDto]
+  "[/Users/amarees/IdeaProjects/spring-petclinic-rest/target/generated-sources/openapi/src/main/java/org/springframework/samples/petclinic/rest/api/VisitsApi.java:216:5]"
+  listVisits: [VisitDto]
+  "[/Users/amarees/IdeaProjects/spring-petclinic-rest/src/main/java/org/springframework/samples/petclinic/rest/controller/RootRestController.java:41:9]"
+  redirectToSwagger: Void
+}
+
+type RoleDto {
+  name: String
+}
+
+input RoleDtoInput {
+  name: String
+}
+
+type SpecialtyDto {
+  id: Int
+  name: String
+}
+
+input SpecialtyDtoInput {
+  id: Int
+  name: String
+}
+
+type UserDto {
+  username: String
+  password: String
+  enabled: Boolean
+  roles: [RoleDto]
+}
+
+input UserDtoInput {
+  username: String
+  password: String
+  enabled: Boolean
+  roles: [RoleDtoInput]
+}
+
+type VetDto {
+  firstName: String
+  lastName: String
+  specialties: [SpecialtyDto]
+  id: Int
+}
+
+input VetDtoInput {
+  firstName: String
+  lastName: String
+  specialties: [SpecialtyDtoInput]
+  id: Int
+}
+
+type VisitDto {
+  date: LocalDate
+  description: String
+  id: Int
+  petId: Int
+}
+
+input VisitDtoInput {
+  date: LocalDate
+  description: String
+  id: Int
+  petId: Int
+}
+
+input VisitFieldsDtoInput {
+  date: LocalDate
+  description: String
+}
+
+type Void {
+  result: Int
+}
+
+"Directs the executor to include this field or fragment only when the `if` argument is true"
+directive @include(
+    "Included when true."
+    if: Boolean!
+  ) on FIELD | FRAGMENT_SPREAD | INLINE_FRAGMENT
+
+"Directs the executor to skip this field or fragment when the `if` argument is true."
+directive @skip(
+    "Skipped when true."
+    if: Boolean!
+  ) on FIELD | FRAGMENT_SPREAD | INLINE_FRAGMENT
+
+directive @payload on ARGUMENT_DEFINITION
+
+"Marks the field, argument, input field or enum value as deprecated"
+directive @deprecated(
+    "The reason for the deprecation"
+    reason: String = "No longer supported"
+  ) on FIELD_DEFINITION | ARGUMENT_DEFINITION | ENUM_VALUE | INPUT_FIELD_DEFINITION
+
+"Exposes a URL that specifies the behaviour of this scalar."
+directive @specifiedBy(
+    "The URL that specifies the behaviour of this scalar."
+    url: String!
+  ) on SCALAR
+
+"Indicates an Input Object is a OneOf Input Object."
+directive @oneOf on INPUT_OBJECT
+
